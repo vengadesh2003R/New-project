@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px 100px;
+}
+
+#bank-logo {
+    height: 3rem;
+    width: auto;
+}
+
+#big-img {
+    height: 34rem;
+    width: auto;
+}
+
+#sec-form {
+    width: 32%;
+    background-color: rgba(153, 151, 245, 0.349);
+}

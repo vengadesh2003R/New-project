@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Savings</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <div class="d-flex justify-content-center p-5">
+            <h1 class="mx-2 text-dark">Mini Savings</h1>
+            <img id="bank-logo" class="mx-2 img-fluid" src="bank.png" alt="Bank logo">
+        </div>
+    </section>
+    <section class="d-flex">
+        <section>
+            <img id="big-img" class="img-fluid me-5 rounded" src="saving.jpg" alt="balance-counting">
+        </section>
+        <section id="sec-form" class="ms-5 pt-4 px-5 rounded bg-gradient">
+            <div>
+                <!-- <h3>Income</h3> -->
+                <div class="form-floating mb-2">
+                    
+                    <input type="text" name="income" class="form-control allNum"  placeholder="income" id="income" >
+                    <label for="income" class="col-sm-2 col-form-label">Income</label>
+                </div>
+            </div>
+            <div>
+                <!-- <h3>Expenses</h3> -->
+                <div class="form-floating mb-2">
+                    
+                    <input type="text" name="food" class="form-control allNum" id="food" placeholder="Food">
+                    <label for="food" class="col-sm-2 col-form-label">Food</label>
+                </div>
+                <div class="form-floating mb-2">
+                    
+                    <input type="text" name="rent" class="form-control allNum"  id="rent" placeholder="House rent">
+                    <label for="rent" class="col-sm-2 col-form-label">Rent</label>
+                </div>
+                <div class="form-floating mb-2">
+                    
+                    <input type="text" name="cloth" class="form-control allNum"  id="cloth" placeholder="Clothings">
+                    <label for="cloth" class="col-sm-2 col-form-label">Clothings</label>
+                </div>
+                
+                <div class="">
+                    <label class="visually-hidden" for="save-percent">Save money</label>
+                    <div class="input-group">
+                    <div class="input-group-text">%</div>
+                    <input type="text" class="form-control allNum" id="save-percent" placeholder="Save for future">
+                </div>
+
+
+                <div class="col text-center">
+                    <button class="btn btn-default btn-primary mt-3" onclick="calculation()">Calculate</button>
+                </div>
+                
+                <div class="row g-1 mt-3">
+                    <div class="col-md-4 form-floating mb-2">
+                        <input type="text" class="form-control allNum" id="savebox" placeholder="save">
+                        <label for="savebox" class="form-label">Savings</label>
+                      </div>
+                    <div class="col-md-4 form-floating mb-2">
+                        <input type="text" class="form-control allNum" id="expences" placeholder="Expences">
+                        <label for="expences" class="form-label">Expences</label>
+                    </div>
+
+                    <div class="col-md-4 form-floating mb-2">
+                    
+                    <input type="text" class="form-control allNum" id="rem-bal" placeholder="Balance">
+                    <label for="rem-bal" class="form-label">Balance</label>
+                    </div>
+                      
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
